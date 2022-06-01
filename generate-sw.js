@@ -35,7 +35,6 @@ self.addEventListener('activate', (event) => {
       await self.registration.navigationPreload.enable();
     }
   })());
-
   // Tell the active service worker to take control of the page immediately.
   self.clients.claim();
 });
